@@ -1,0 +1,17 @@
+[jenkins-master]
+10.128.0.22 
+[jenkins-master:vars]
+ansible_user=i27k8s10
+ansible_ssh_private_key_file=/home/i27k8s10/ssh-key
+
+[jenkins-slave]
+10.128.0.24
+[jenkins-slave:vars]
+ansible_user=i27k8s10
+ansible_ssh_private_key_file=/home/i27k8s10/ssh-key
+
+[sonar]
+10.128.0.23
+[sonar:vars]
+ansible_user=i27k8s10
+ansible_ssh_private_key_file=/home/i27k8s10/ssh-key
